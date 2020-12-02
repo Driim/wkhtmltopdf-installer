@@ -13,7 +13,7 @@
 var path = require('path');
 var spawn = require('child_process').spawn;
 
-var binPath = require('../').path.pdf;
+var binPath = require('../').path.image;
 
 var args = process.argv.slice(2);
 

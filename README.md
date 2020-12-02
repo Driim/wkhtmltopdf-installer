@@ -1,21 +1,18 @@
-# wkhtmltopdf-installer
-[![NPM Version](http://img.shields.io/npm/v/wkhtmltopdf-installer.svg?style=flat-square)](https://npmjs.com/package/wkhtmltopdf-installer)
+# wkhtmlto-installer
 [![License](http://img.shields.io/npm/l/wkhtmltopdf-installer.svg?style=flat-square)](http://opensource.org/licenses/MIT)
-[![Build Status](https://travis-ci.org/pofider/node-wkhtmltopdf-installer.svg?branch=master)](https://travis-ci.org/pofider/node-wkhtmltopdf-installer)
 
-> npm install wkhtmltopdf-installer
+> npm install wkhtmlto-installer
 
-An NPM installer for [wkhtmltopdf](http://wkhtmltopdf.org/) utility. The package automatically downloads platform specific wkhtmltopdf binary if not already available as global command.
-
+An NPM installer for [wkhtmltopdf and wkhtmltoimage](http://wkhtmltopdf.org/)utilitys. The package automatically downloads platform specific wkhtmltopdf binary if not already available as global command.
 
 ## Basics
 
-This package is a port of [phantomjs npm installer](https://github.com/Medium/phantomjs) with the same API.
+This package is fork of [wkhtmltopdf-installer](https://www.npmjs.com/package/wkhtmltopdf-installer) that has API to use wkhtmltopdf and wkhtmltoimage.
 
 ```javascript
 var path = require('path');
 var childProcess = require('child_process');
-var binPath  = require('wkhtmltopdf-installer').path;
+var binPath  = require('wkhtmltopdf-installer').path.pdf;
 
 var childArgs = [
   path.join(__dirname, 'test.html'),
