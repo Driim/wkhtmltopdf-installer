@@ -1,6 +1,6 @@
 {
   "name": "wkhtmlto-installer",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "keywords": [
     "wkhtmltopdf",
     "wkhtmltoimage",
@@ -31,10 +31,10 @@
     "log-symbols": "4.0.0",
     "which": "2.0.2"
   },
-  "devDependencies": {},
   "files": [
     "bin",
     "lib",
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ]
 }
